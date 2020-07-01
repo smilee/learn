@@ -1,5 +1,8 @@
 - [ ] Add disk volumes (case-sensitive option enabled for dev)
-- [ ] Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
-- [ ] Install [nvm](https://github.com/nvm-sh/nvm) and node
+- [ ] Install a package manager for macOS: [homebrew](https://brew.sh/)
+- [ ] Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [ ] Add Zsh configuration: [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+- [ ] Install a version manager for Node.js: [nvm](https://github.com/nvm-sh/nvm)
+- [ ] Install [Node.js](https://nodejs.org/en/) using nvm
 - [ ] [Connect to GitHub with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-- [ ] Install [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
+- [ ] Install a package manager for JavaScript: [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
