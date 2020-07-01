@@ -1,0 +1,5 @@
+- [ ] Add disk volumes (case-sensitive option enabled for dev)
+- [ ] Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+- [ ] Install [nvm](https://github.com/nvm-sh/nvm) and node
+- [ ] [Connect to GitHub with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+- [ ] Install [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
