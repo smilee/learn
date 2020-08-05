@@ -6,3 +6,10 @@
 6. Install [Node.js](https://nodejs.org/en/) using nvm
 7. [Connect to GitHub with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 8. Install a package manager for JavaScript: [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
+9. Install a Python distribution: [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+```
+$ brew install miniconda
+...
+$ conda init zsh
+```
+10. Install a notebook: [Jupyter Notebook](https://jupyter.org/)
