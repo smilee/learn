@@ -21,4 +21,4 @@
 
 ## ❓ How
 
-- Resource 1
+- 『울트라러닝』 (Ultralearning) by Scott H. Young
