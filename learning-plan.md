@@ -13,11 +13,11 @@
 
 ### Facts to memorize
 
-- [ ] Concept 2
+- [ ] Fact 2
 
 ### Procedures to perform
 
-- [ ] Concept 3
+- [ ] Procedure 3
 
 ## ❓ How
 
