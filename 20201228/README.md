@@ -1,6 +1,6 @@
 # December 28, 2020
 
-## Define components as either presentational or container
+## Categorize components as either presentational or container
 The `Gachapon` component carried most of the code before the refactoring took place. To practice the separation of concerns, a move of the code about the machine's logic to the container component took place. Additional tests, as well as a reorganization to further separate concerns, would be ideal.
 
 ## Remove `pointer-events: none` from CSS
