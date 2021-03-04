@@ -26,20 +26,23 @@ npx eslint --init
 ### Set up Eslint
 
 ``` javascript
-// eslintrc.js
+// .eslintrc.js
 
 module.exports = {
   env: {
     browser: true,
-    node: true,
     es2021: true,
     jest: true,
   },
   extends: [
-    'airbnb',
+    'airbnb-base',
   ],
   globals: {
     context: true,
+  },
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
   },
   rules: {
     indent: ['error', 2],
@@ -69,6 +72,7 @@ module.exports = {
     'no-unused-vars': ['error', { varsIgnorePattern: 'jsx' }],
   },
 };
+
 ```
 
 ## Install and set up Jest
