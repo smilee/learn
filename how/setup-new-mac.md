@@ -34,6 +34,8 @@ nvm install node # "node" is an alias for the latest version
 
 ## [Connect to GitHub with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
+## (optional) [Separate work and personal SSH](https://dublin-java.tistory.com/62)
+
 ## Install a package manager for JavaScript: [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
 
 ## Install a Python distribution: [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
