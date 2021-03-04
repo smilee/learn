@@ -96,4 +96,23 @@ module.exports = {
     '<rootDir>/.cache',
   ],
 };
+
 ```
+
+## Initialize and set up Git
+
+### Initialize Git
+
+``` bash
+git init
+```
+
+### Set up Git
+
+``` gitignore
+# .gitignore
+
+node_modules
+
+```
+
