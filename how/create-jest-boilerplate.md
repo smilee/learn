@@ -1,3 +1,5 @@
+# How to get started with a Jest boilerplate
+
 ## Install [Node Version Manager](https://github.com/nvm-sh/nvm)
 ``` bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | zsh
