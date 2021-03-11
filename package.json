@@ -1,0 +1,25 @@
+{
+  "name": "jest-boilerplate",
+  "version": "0.0.0",
+  "description": "A template for Jest with describe-context-it pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [
+    "jest",
+    "boilerplate",
+    "tdd",
+    "bdd"
+  ],
+  "author": "Seungmin Lee",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "jest-plugin-context": "^2.9.0"
+  }
+}
