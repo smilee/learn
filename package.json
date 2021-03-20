@@ -1,7 +1,7 @@
 {
-  "name": "jest-boilerplate",
+  "name": "tddbe",
   "version": "0.0.0",
-  "description": "A template for Jest with describe-context-it pattern",
+  "description": "Code from Kent Beck's Test-Driven Development: By Example, in JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll"
