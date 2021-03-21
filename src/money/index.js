@@ -5,6 +5,8 @@ export default class Money {
 
   equals(object) {
     const money = object;
-    return this.amount === money.amount;
+
+    return this.amount === money.amount
+      && this instanceof money.constructor;
   }
 }
