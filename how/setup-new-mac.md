@@ -1,5 +1,9 @@
 ## Add disk volumes (case-sensitive option enabled for dev)
 
+## Disable `Keyboard > Text` Settings
+- [ ] Add period with double space
+- [ ] Use smart quotes and dashes
+
 ## Install a package manager for macOS: [homebrew](https://brew.sh/)
 ``` bash
 mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
