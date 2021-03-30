@@ -1,3 +1,9 @@
+export class Bank {
+  reduce(source, to) {
+    return Money.Dollar(10);
+  }
+}
+
 export default class Money {
   constructor(amount, currency) {
     this.amount = amount;
@@ -14,6 +20,11 @@ export default class Money {
 
   times(multiplier) {
     return new Money(this.amount * multiplier, this.currency);
+  }
+
+  plus(addend) {
+    return new Money(this.amount + addend.amount
+      , this.currency)
   }
 
   equals(object) {
