@@ -1,6 +1,18 @@
 export class Bank {
   reduce(source, to) {
-    return Money.Dollar(10);
+    return source.reduce(to);
+  }
+}
+
+export class Sum {
+  constructor(augend, addend) {
+    this.augend = augend;
+    this.addend = addend;
+  }
+
+  reduce(to) {
+    const amount = this.augend.amount + this.addend.amount;
+    return new Money(amount, to)
   }
 }
 
@@ -23,8 +35,7 @@ export default class Money {
   }
 
   plus(addend) {
-    return new Money(this.amount + addend.amount
-      , this.currency)
+    return new Sum(this, addend);
   }
 
   equals(object) {
@@ -32,5 +43,9 @@ export default class Money {
 
     return this.amount === money.amount
       && this.currency === money.currency;
+  }
+
+  reduce(to) {
+    return this;
   }
 }
