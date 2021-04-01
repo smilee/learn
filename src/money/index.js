@@ -1,6 +1,36 @@
+export class Pair {
+  constructor(from, to) {
+    this.from = from;
+    this.to = to;
+  }
+
+  equals(object) {
+    const pair = object;
+    return this.from === pair.from && this.to === pair.to;
+  }
+
+  hashCode() {
+    return 0;
+  }
+}
+
 export class Bank {
+  constructor() {
+    this.rates = new Map();
+  }
+
   reduce(source, to) {
-    return source.reduce(to);
+    return source.reduce(this, to);
+  }
+
+  addRate(from, to, rate) {
+    this.rates.set(JSON.stringify(new Pair(from, to)), Number(rate));
+  }
+
+  rate(from, to) {
+    if (from === to) return 1;
+    const rate = this.rates.get(JSON.stringify(new Pair(from, to)));
+    return Number(rate);
   }
 }
 
@@ -10,7 +40,7 @@ export class Sum {
     this.addend = addend;
   }
 
-  reduce(to) {
+  reduce(bank, to) {
     const amount = this.augend.amount + this.addend.amount;
     return new Money(amount, to)
   }
@@ -45,7 +75,8 @@ export default class Money {
       && this.currency === money.currency;
   }
 
-  reduce(to) {
-    return this;
+  reduce(bank, to) {
+    const rate = bank.rate(this.currency, to);
+    return new Money(this.amount / rate, to);
   }
 }

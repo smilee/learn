@@ -67,4 +67,15 @@ describe('Money', () => {
       expect(Money.Dollar(1)).toEqual(result);
     })
   })
+
+  context('when different currency is reduced', () => {
+    const bank = new Bank();
+    bank.addRate("CHF", "USD", 2);
+    const result = bank.reduce(Money.Franc(2), 'USD');
+    expect(Money.Dollar(1)).toEqual(result)
+  })
+
+  context('when the same currency is compared for rates', () => {
+    expect(1).toBe(new Bank().rate('USD', 'USD'));
+  })
 });
