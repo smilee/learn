@@ -78,4 +78,13 @@ describe('Money', () => {
   context('when the same currency is compared for rates', () => {
     expect(1).toBe(new Bank().rate('USD', 'USD'));
   })
+
+  context('when different currencies are added', () => {
+    const fiveBucks = Money.Dollar(5);
+    const tenFrancs = Money.Franc(10);
+    const bank = new Bank();
+    bank.addRate('CHF', 'USD', 2);
+    const result = bank.reduce(fiveBucks.plus(tenFrancs), 'USD');
+    expect(Money.Dollar(10)).toEqual(result);
+  })
 });
