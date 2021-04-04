@@ -4,6 +4,8 @@
 [ ] Equal null
 [ ] Equal object
 [ ] Dollar/Franc 중복
+[ ] Sum.plus
+[ ] Expression.times
 
 [x] $5 X 2 = $10
 [x] amount를 private로 만들기

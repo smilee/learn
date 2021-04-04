@@ -1,4 +1,5 @@
 import Money, { Bank, Sum } from './index';
+import { fiveBucks, tenFrancs } from './fixtures'
 
 describe('Money', () => {
   context('when an instance is made', () => {
@@ -80,11 +81,27 @@ describe('Money', () => {
   })
 
   context('when different currencies are added', () => {
-    const fiveBucks = Money.Dollar(5);
-    const tenFrancs = Money.Franc(10);
     const bank = new Bank();
     bank.addRate('CHF', 'USD', 2);
     const result = bank.reduce(fiveBucks.plus(tenFrancs), 'USD');
     expect(Money.Dollar(10)).toEqual(result);
+  })
+
+  context('when sum is added to money', () => {
+    const bank = new Bank();
+    bank.addRate('CHF', 'USD', 2);
+    const sum = new Sum(fiveBucks, tenFrancs).plus(fiveBucks);
+    const result = bank.reduce(sum, 'USD');
+    expect(Money.Dollar(15)).toEqual(result);
+  })
+
+  context('when a sum is multiplied', () => {
+    it('returns the multiple', () => {
+      const bank = new Bank();
+      bank.addRate('CHF', 'USD', 2);
+      const sum = new Sum(fiveBucks, tenFrancs).times(2);
+      const result = bank.reduce(sum, 'USD');
+      expect(Money.Dollar(20)).toEqual(result);
+    })
   })
 });
