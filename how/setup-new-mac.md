@@ -9,6 +9,17 @@
 mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
 ```
 
+## Install iTerm2 via Homebrew
+``` bash
+brew install --cask iterm2
+```
+
+## Add Zsh configuration `.zshrc`:
+``` bash
+setopt interactivecomments
+PS1='▸ '
+```
+
 ## Install Google Chrome via Homebrew
 ``` bash
 brew install --cask google-chrome
@@ -21,10 +32,9 @@ brew install git
 git config --global init.defaultBranch main
 ```
 
-## Add Zsh configuration `.zshrc`:
+## Install VS Code
 ``` bash
-setopt interactivecomments
-PS1='▸ '
+brew install --cask visual-studio-code
 ```
 
 ## Install a version manager for Node.js: [nvm](https://github.com/nvm-sh/nvm)
