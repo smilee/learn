@@ -21,9 +21,10 @@ brew install git
 git config --global init.defaultBranch main
 ```
 
-## Add Zsh configuration: [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+## Add Zsh configuration `.zshrc`:
 ``` bash
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+setopt interactivecomments
+PS1='▸ '
 ```
 
 ## Install a version manager for Node.js: [nvm](https://github.com/nvm-sh/nvm)
