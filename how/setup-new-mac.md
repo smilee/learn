@@ -54,6 +54,7 @@ nvm install node # "node" is an alias for the latest version
 ## Install a package manager for JavaScript: [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
 
 ## Install a Python distribution: [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
 ```
 $ brew install miniconda
 ...
@@ -61,3 +62,5 @@ $ conda init zsh
 ```
 
 ## Install a notebook: [Jupyter Notebook](https://jupyter.org/)
+
+## Connect an old Wacom tablet: [wacom-driver-fix](https://github.com/thenickdude/wacom-driver-fix)
